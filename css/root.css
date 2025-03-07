@@ -1,0 +1,20 @@
+*{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+:root{
+    --primary-color: #181818;
+    --secondary-color: #f4f4f4;
+    --font-color: #333333;
+    --rotating-color: #f46936;
+}
