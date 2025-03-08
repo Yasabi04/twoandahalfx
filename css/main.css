@@ -142,4 +142,19 @@
         transform: rotateY(0);
     }
 }
-  
+
+
+
+@media screen and (max-width: 768px){
+    .sendMail{
+        width: 100vw;
+        transform: translateX(0);
+        border-bottom-left-radius: 90% 25%;
+        border-top-right-radius: 20% 10%;
+        border-top-left-radius: 0;
+        overflow: hidden
+    }
+    .contactForm{
+        width: 100%;
+    }
+}
