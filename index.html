@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Hit me up!</title>
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/main.css">
@@ -11,7 +12,8 @@
     <header></header>
     <main>
         <section class = "sendMail">
-            <h1>Schreib mir eine Mail und ich melde mich bei Dir!</h1>
+            <p class = "me">Erfahre etwas über mich! <span><i class="fa-solid fa-rotate"></i></span></p>
+            <h1 class = "bigHeadliner">Schreib mir eine Mail und ich melde mich bei Dir!</h1>
             <div class = "formContainer">
                 <form action = "https://formsubmit.co/62bb0eacb289711419256e721d1d829c " method="POST" class = "contactForm">
                     <input type="hidden" name="_subject" value="Neue Anfrage von callmemath!">
@@ -19,12 +21,16 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="name" placeholder="Name*" required>
                     <input type="email" name="email" placeholder="Email*" required>
-                    <input type="number" placeholder="Klasse">
+                    <input type="number" name="klasse" placeholder="Klasse">
                     <textarea name="message" placeholder="Themenwünsche*" required></textarea>
                     <button type = "submit" class = "submitButton">Nachricht versenden!</button>
                 </form>
             </div>
+            <div class="textAboutMe">
+                <p>Oder schreib mir direkt eine Mail</p>
+            </div>
         </section>
     </main>
+    <script src = "./scripts/main.js"></script>
 </body>
 </html>
