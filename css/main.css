@@ -62,12 +62,11 @@
         resize: none;
     }
     input:invalid, textarea:invalid{
-        border: 0.125rem solid var(--highlight-color-magenta);
-        box-shadow: 0 0 0.5rem var(--highlight-color-magenta);
+        border: 0.25rem solid var(--highlight-color-magenta);
+        position: relative;
     }
     input:valid, textarea:valid{
-        border: 0.125rem solid var(--highlight-color-blue);
-        box-shadow: 0 0 0.5rem var(--highlight-color-blue);
+        border: 0.25rem solid var(--highlight-color-blue);
     }
     button{
         padding: 0.5rem;
