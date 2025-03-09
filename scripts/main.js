@@ -10,12 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if(formContainer.classList.contains('flip')) {
             formContainer.classList.remove('flip');
             formContainer.classList.add('reverseFlip');
-            welcome.innerHTML = 'Schreib mir eine Mail und ich melde mich bei Dir!';
+            setTimeout(() => {
+                welcome.innerHTML = 'Schreib mir eine Mail und ich melde mich bei Dir!';
+            }, 200)
             me.style.visibility = 'hidden';  // Zeigen beim Zurückdrehen
         } else {
             formContainer.classList.remove('reverseFlip');
             formContainer.classList.add('flip');
-            welcome.innerHTML = 'Hi, ich bin Yassin! 👋';
             me.innerHTML = `
                 <p>Ich bin 20 Jahre alt, komme aus Köln und studiere Medieninformatik!</p>
                 <ul>
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
             `;
             setTimeout(() => {
+                welcome.innerHTML = 'Hi, ich bin Yassin! 👋';
                 me.style.visibility = 'visible';  // Zeigen beim Hindrehen
             }, 200)
         }
