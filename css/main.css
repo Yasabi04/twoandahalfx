@@ -7,8 +7,8 @@
     padding: 1rem;
     padding-top: 5rem;
     border-top-left-radius: 5rem;;
-    height: 100dvh;
-    width: 50dvw;
+    height: 100vh;
+    width: 50vw;
     transform: translateX(100%);
     p{
         color: var(--primary-color);
@@ -142,6 +142,7 @@
     justify-content: flex-start;
     align-items: center;
     font-weight: 550;
+    margin-bottom: 1rem;
 }
 
 .listObjects::before{
@@ -198,7 +199,7 @@
         width: 100%;
     }
     .listObjects{
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 550;
     }
     .listObjects::before{

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul>
                     <li class = "listObjects">3 Semester Tutor für Mathe 1 & 2</li>
                     <li class = "listObjects">Momentan im 5. Semester an der TH Köln</li>
-                    <li class = "listObjects">Abi im 2022 mit Schwerpunkt Mathemathik</li>
+                    <li class = "listObjects">Abi im Jahr 2022 mit Schwerpunkt Mathemathik</li>
                 </ul>
             `;
             setTimeout(() => {
