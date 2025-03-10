@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const formContainer = document.querySelector('.formContainer');
     const welcome = document.querySelector('.bigHeadliner');
     const me = document.querySelector('.textAboutMe');
+    const submitButton = document.querySelector('.submitButton');
+    
 
     me.style.visibility = 'hidden';
     
@@ -29,6 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 welcome.innerHTML = 'Hi, ich bin Yassin! 👋';
                 me.style.visibility = 'visible';  // Zeigen beim Hindrehen
             }, 200)
+        }
+    });
+
+    submitButton.addEventListener('click', () => {
+        const userInputTopic = document.querySelector('.topics').value;
+        const userInputName = document.querySelector('.name').value;
+        const userInputMail = document.querySelector('.email').value;
+        if(
+            userInputTopic !== '' &&
+            userInputName !== '' &&
+            userInputMail !== ''
+        ){
+            submitButton.innerHTML = `
+                <div class="loader"></div>
+            `;
+            console.log('Geaddet')
         }
     });
 });

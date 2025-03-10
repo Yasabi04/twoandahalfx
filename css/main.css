@@ -112,11 +112,19 @@
     height: 100vh;
     transform: translateX(50%);
     background-color: var(--secondary-color);
+    padding: 3rem;
     h1{
         color: var(--primary-color);
         font-size: 1.75rem;
         margin-bottom: 1rem;
-        max-width: 70%;
+        max-width: 80%;
+        text-align: center;
+    }
+    p{
+        color: var(--primary-color);
+        font-size: 1.0rem;
+        margin-bottom: 1rem;
+        max-width: 80%;
         text-align: center;
     }
 }
@@ -184,7 +192,18 @@
     }
 }
 
-
+.loader {
+    width: 120px;
+    height: 18px;
+    background:
+     linear-gradient(var(--highlight-color-gold) 0 0) 0/10% no-repeat
+     var(--highlight-color-blue);
+    animation: l1 3s infinite linear;
+  }
+  
+  @keyframes l1 {
+      100% {background-size:100%}
+  }
 
 @media screen and (max-width: 768px){
     .sendMail{
@@ -205,4 +224,21 @@
     .listObjects::before{
         font-size: 2rem;
     }
+    .thankyouContainer{
+        width: 100%;
+        transform: translateX(0);
+        padding: 1rem;
+        border-top-left-radius: 40% 10%;
+        border-top-right-radius: 90% 30%;
+        border-bottom-left-radius: 100% 30%;
+        border-bottom-right-radius: 60% 10%;		
+        h1{
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            max-width: 70%;
+            text-align: center;
+        }
+    }
 }
+
