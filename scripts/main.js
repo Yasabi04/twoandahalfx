@@ -6,31 +6,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.querySelector('.submitButton');
     
 
-    me.style.visibility = 'hidden';
+    me.classList.add('hidden'); // Initial verstecken
     
     rotate.addEventListener('click', () => {
         if(formContainer.classList.contains('flip')) {
             formContainer.classList.remove('flip');
             formContainer.classList.add('reverseFlip');
+            me.classList.add('hidden');
             setTimeout(() => {
                 welcome.innerHTML = 'Schreib mir eine Mail und ich melde mich bei Dir!';
-            }, 200)
-            me.style.visibility = 'hidden';  // Zeigen beim Zurückdrehen
+            }, 200);
         } else {
             formContainer.classList.remove('reverseFlip');
             formContainer.classList.add('flip');
             me.innerHTML = `
                 <p>Ich bin 20 Jahre alt, komme aus Köln und studiere Medieninformatik!</p>
                 <ul>
-                    <li class = "listObjects">3 Semester Tutor für Mathe 1 & 2</li>
-                    <li class = "listObjects">Momentan im 5. Semester an der TH Köln</li>
-                    <li class = "listObjects">Abi im Jahr 2022 mit Schwerpunkt Mathemathik</li>
+                    <li class="listObjects">3 Semester Tutor für Mathe 1 & 2</li>
+                    <li class="listObjects">Momentan im 5. Semester an der TH Köln</li>
+                    <li class="listObjects">Abi im Jahr 2022 mit Schwerpunkt Mathemathik</li>
                 </ul>
             `;
             setTimeout(() => {
+                me.classList.remove('hidden');
                 welcome.innerHTML = 'Hi, ich bin Yassin! 👋';
-                me.style.visibility = 'visible';  // Zeigen beim Hindrehen
-            }, 200)
+            }, 200);
         }
     });
 
