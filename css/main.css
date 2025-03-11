@@ -23,17 +23,10 @@
             color: var(--highlight-color-magenta);
         }
     }
-    h1{
-        color: var(--primary-color);
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
-        max-width: 70%;
-        text-align: center;
-    }
     .me{
         span{
             i{
-                color: var(--highlight-color-);
+                color: var(--highlight-color-blue);
             }
         }
     }
@@ -54,7 +47,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 60%;
     input, textarea{
         width: 100%;
         padding: 0.5rem;
@@ -141,54 +134,12 @@
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
-}
-
-.listObjects{
-    list-style-type: none;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-weight: 550;
-    margin-bottom: 1rem;
-}
-
-.listObjects::before{
-    content: "\f00c"; /* Font Awesome check icon unicode */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    margin-right: 1rem;
-    font-size: 2.25rem;
-    color: var(--highlight-color-gold);
-}
-
-.flip {
-	animation: flip 0.5s cubic-bezier(0.45, 0.03, 0.5, 1) both;
-}
-
-.reverseFlip {
-    animation: reverseFlip 0.5s cubic-bezier(0.45, 0.03, 0.5, 1) both;
-}
-
-@keyframes flip {
-    0% {
-        transform: rotateY(0);
-        backface-visibility: hidden;
-    }
-    100% {
-        transform: rotateY(-180deg);
-        backface-visibility: hidden;
-    }
-}
-
-@keyframes reverseFlip{
-    0% {
-        transform: rotateY(-180deg);
-        backface-visibility: hidden;
-    }
-    100% {
-        transform: rotateY(0);
-        backface-visibility: hidden;
+    p{
+        .highlightReason, a{
+            color: var(--highlight-color-magenta);
+            font-weight: 700;
+            text-decoration: none;
+        }
     }
 }
 
@@ -242,14 +193,24 @@
     }
 }
 
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
+.bigHeadliner{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1rem;
 }
 
-.visible {
-    opacity: 1;
-    visibility: hidden;
-    transition: opacity 2s, visibility 1s;
+.reasons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+        font-size: 1.25rem;
+        font-weight: 550;
+        margin-bottom: 1rem;
+        list-style-image: url('/img/Polygon4.png');
+        padding: 0.5rem;
+        text-align: center;
+    }
 }

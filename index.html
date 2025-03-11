@@ -8,26 +8,41 @@
     <title>Hit me up!</title>
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
     <header></header>
     <main>
         <section class = "sendMail">
             <p class = "me">Erfahre etwas über mich! <span><i class="fa-solid fa-rotate"></i></span></p>
-            <h1 class = "bigHeadliner">Schreib mir eine Mail und ich melde mich bei Dir!</h1>
-            <div class = "formContainer">
-                <form action = "https://formsubmit.co/62bb0eacb289711419256e721d1d829c " method="POST" class = "contactForm">
-                    <input type="hidden" name="_subject" value="Neue Anfrage von callmemath!">
-                    <input type="hidden" name="_next" value="https://yasabi04.github.io/callmemath/thankyou.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="name" class = "name"placeholder="Name*" required>
-                    <input type="email" name="email" class = "email" placeholder="Email*" required>
-                    <input type="number" min="5" max="13" name="klasse" placeholder="Klasse">
-                    <textarea name="message" class = "topics" placeholder="Themenwünsche*" required></textarea>
-                    <button type = "submit" class = "submitButton">Nachricht versenden!</button>
-                </form>
-                <div class="textAboutMe"></div>
+            <div class = "flip-card">
+                <div class = "flip-card-inner">
+                    <div class = "formContainer flip-card-front">
+                    <h1 class = "bigHeadliner">Schreib mir eine Mail und ich melde mich bei Dir!</h1>
+                        <form action = "https://formsubmit.co/62bb0eacb289711419256e721d1d829c " method="POST" class = "contactForm">
+                            <input type="hidden" name="_subject" value="Neue Anfrage von callmemath!">
+                            <input type="hidden" name="_next" value="https://twoandahalfx.de/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="name" class = "name"placeholder="Name*" required>
+                            <input type="email" name="email" class = "email" placeholder="Email*" required>
+                            <input type="number" min="5" max="13" name="klasse" placeholder="Klasse">
+                            <textarea name="message" class = "topics" placeholder="Themenwünsche*" required></textarea>
+                            <button type = "submit" class = "submitButton">Nachricht versenden!</button>
+                        </form>
+                    </div>
+                    <div class="textAboutMe flip-card-back">
+                        <h1 class = "bigHeadliner">Hi, ich bin Yassin! 👋</h1>
+                        <p>Ich bin 21 Jahre, komme aus Köln und studiere <span class = "highlightReason"><a href="https://www.medieninformatik.th-koeln.de/">Medieninformatik</a></span>. 
+                            Wieso du mich kontaktieren solltest?<br>Ich weiß, dass Mathe in der Schule unnötig kompliziert erklärt wird. Ich behaupte: <br><span class = "highlightReason">Das geht einfacher!</span></p>
+                        <ul class  = "reasons">
+                            <li>3 Semester Tutor an der TH Köln für Mathe 1 und 2</li>
+                            <li>Abitur im Jahr 2022</li>
+                            <li>Ich helfe gerne, wenn der Schuh drückt!</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            
         </section>
     </main>
     <script src = "./scripts/main.js"></script>
