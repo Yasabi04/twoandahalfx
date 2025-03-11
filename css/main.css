@@ -141,6 +141,9 @@
             font-weight: 700;
             text-decoration: none;
         }
+        .highlightReason{
+            font-size: 1.25rem;
+        }
     }
 }
 
@@ -217,7 +220,7 @@
         width: 16px;
         height: 16px;
         margin-right: 1rem;
-        background-image: url('/img/Polygon4.png');
+        background-image: url('/img/arrow-blue.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
