@@ -18,16 +18,16 @@
         max-width: 70%;
         text-align: center;
         i{
-            padding-left: 0.5rem;
+            padding: 0.5rem;
         }
         :hover{
-            color: var(--highlight-color-magenta);
+            color: var(--highlight-color-winered);
         }
     }
     .me{
         span{
             i{
-                color: var(--highlight-color-blue);
+                color: var(--highlight-color-autumnbrown);
             }
         }
     }
@@ -60,11 +60,11 @@
         outline: none;
     }
     input:invalid, textarea:invalid{
-        border: 0.25rem solid var(--highlight-color-magenta);
+        border: 0.25rem solid var(--highlight-color-winered);
         position: relative;
     }
     input:valid, textarea:valid{
-        border: 0.25rem solid var(--highlight-color-blue);
+        border: 0.25rem solid var(--highlight-color-lightgreen);
     }
     button{
         padding: 0.5rem;
@@ -78,8 +78,8 @@
     button:hover{
         padding: 0.5rem;
         margin: 0.5rem;
-        border: 1px solid var(--highlight-color-blue);
-        background-color: var(--highlight-color-blue);
+        border: 1px solid var(--highlight-color-autumnbrown);
+        background-color: var(--highlight-color-autumnbrown);
         color: var(--secondary-color);
         cursor: pointer;
         position: relative;

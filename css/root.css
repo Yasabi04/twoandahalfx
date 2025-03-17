@@ -1,7 +1,7 @@
 *{
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
-    color: #333;
+    color: var(--font-color);
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -9,7 +9,8 @@
 }
 
 body{
-    background-image: url('../img/V1.0.png');
+    /* background-image: url('../img/V1.0.png'); */
+    background-image: url('../img/COLORFULL_BACKGROUND.png');
     background-size: cover;
     background-position: center;
     font-size: 1rem;
@@ -22,4 +23,7 @@ body{
     --highlight-color-magenta: #d3126c;
     --highlight-color-gold: #d3b312;
     --highlight-color-blue: #1296d3;
+    --highlight-color-lightgreen: #a5ea51;
+    --highlight-color-winered: #b61e4c;
+    --highlight-color-autumnbrown: #d37e45;
 }

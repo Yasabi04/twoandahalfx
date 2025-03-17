@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const rotate = document.querySelector('.fa-rotate');
     const flip = document.querySelector('.flip-card .flip-card-inner');
-    const directingText = document.querySelector('.me');
-
+    const toSpin = document.querySelector('.fa-rotate');
     const submitButton = document.querySelector('.submitButton');
     
     rotate.addEventListener('click', () => {
         flip.classList.toggle('flip-rotate');
+        toSpin.classList.toggle('spin');
     });
 
     submitButton.addEventListener('click', () => {
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             submitButton.innerHTML = `
                 <div class="loader"></div>
             `;
-            console.log('Geaddet')
         }
     });
 });
