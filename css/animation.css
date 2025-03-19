@@ -59,3 +59,16 @@
   .fa-rotate.active{
     transform: rotateZ(180deg);
   }
+
+  .loader {
+    width: 120px;
+    height: 18px;
+    background:
+     linear-gradient(var(--highlight-color-gold) 0 0) 0/10% no-repeat
+     var(--highlight-color-blue);
+    animation: l1 3s infinite linear;
+  }
+  
+  @keyframes l1 {
+      100% {background-size:100%}
+  }

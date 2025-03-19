@@ -40,7 +40,6 @@
     align-items: center;
     padding-bottom: 5rem;
     padding-top: 3rem;
-    border-bottom: 0.75rem dashed var(--primary-color);
     width: 100%;
 }
 
@@ -148,26 +147,14 @@
     }
 }
 
-.loader {
-    width: 120px;
-    height: 18px;
-    background:
-     linear-gradient(var(--highlight-color-gold) 0 0) 0/10% no-repeat
-     var(--highlight-color-blue);
-    animation: l1 3s infinite linear;
-  }
-  
-  @keyframes l1 {
-      100% {background-size:100%}
-  }
-
 @media screen and (max-width: 768px){
     .sendMail{
         width: 100vw;
         transform: translateX(0);
         border-bottom-left-radius: 90% 25%;
-        border-top-right-radius: 20% 10%;
-        border-top-left-radius: 0;
+        border-top-right-radius: 20% 30%;
+        border-top-left-radius: 20%;
+        border-bottom-right-radius: 50%;
         overflow: hidden;
     }
     .contactForm{
