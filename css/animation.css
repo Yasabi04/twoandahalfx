@@ -50,15 +50,12 @@
       100% {background-size:100%}
   }
 
-  .spin{
-    animation: spin 0.4s linear;
+
+  .fa-rotate{
+    transform: rotateZ(0deg);
+    transition: transform 0.4s;
   }
 
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(180deg);
-    }
+  .fa-rotate.active{
+    transform: rotateZ(180deg);
   }

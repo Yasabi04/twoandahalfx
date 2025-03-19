@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     rotate.addEventListener('click', () => {
         flip.classList.toggle('flip-rotate');
-        toSpin.classList.toggle('spin');
+        toSpin.classList.toggle('active');
     });
 
     submitButton.addEventListener('click', () => {
