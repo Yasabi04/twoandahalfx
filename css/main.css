@@ -105,9 +105,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 100vh;
-    transform: translateX(50%);
+    height: 50vh;
+    width: 50vw;
+    transform: translate(50%, 50%);
     background-color: var(--secondary-color);
     padding: 3rem;
     h1{
@@ -164,13 +164,9 @@
         width: auto;
     }
     .thankyouContainer{
-        width: 100%;
+        width: 100vw;
         transform: translateX(0);
-        padding: 1rem;
-        border-top-left-radius: 40% 10%;
-        border-top-right-radius: 90% 30%;
-        border-bottom-left-radius: 100% 30%;
-        border-bottom-right-radius: 60% 10%;		
+        padding: 1rem;		
         h1{
             color: var(--primary-color);
             font-size: 1.75rem;
